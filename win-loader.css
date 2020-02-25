@@ -1,0 +1,55 @@
+	
+.loader {
+    background-color: #fff;
+    padding: 5px;
+    width: 350px;
+    overflow-x: hidden;
+    justify-content: stretch;
+    white-space: nowrap;
+    user-select:none;
+}
+.loader-dot {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin: 2px;
+    background-color: #224499;
+    display: inline-block;
+    position: relative;
+    transition: all ease 2s;
+    animation: accordion 4s ease infinite;
+}
+.loader-inner{
+    animation: marquee ease-in-out infinite 4s;
+}
+@keyframes marquee{
+    0%{
+        margin-left: -50%;
+    }
+    50%{
+        margin-left: 40%;
+    }
+    100%{
+        margin-left: 200%;
+    }
+}
+@keyframes accordion{
+    0% {
+        margin-left: 3%;
+    }
+    20% {
+        margin-left: 2%;
+    }
+    40% {
+        margin-left: 0%;
+    }
+    60% {
+        margin-left: 0%;
+    }
+    80% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
